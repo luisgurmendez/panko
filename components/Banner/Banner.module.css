@@ -1,0 +1,15 @@
+.arced-banner-container {
+    position: relative;
+    display: flex;
+    min-height: 8rem;
+    height: 22vh;
+    max-height: 12rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.arced-banner-container img {
+    border-radius: 0 0 64% 64%/0 0 32% 32%;
+}

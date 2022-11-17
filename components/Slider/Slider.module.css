@@ -1,0 +1,9 @@
+.slider-item--before-hovered {
+    transform: translate(-0.825rem);
+    opacity: .3;
+}
+
+.slider-item--after-hovered {
+    transform: translate(0.825rem);
+    opacity: .3;
+}

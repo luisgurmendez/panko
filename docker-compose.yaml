@@ -1,0 +1,30 @@
+version: "3.6"
+services:
+  postgres:
+    image: postgres:12.9
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - postgres_db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+    
+  webhooks-handler:
+    image: webhooks_handler_image
+    ports:
+      - "42069:42069"
+    restart: always
+    environment:
+      AWS_DEFAULT_REGION: sa-east-1
+      HASURA_ENDPOINT: "http://hasura:8080"
+      HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET}
+      LOCAL_RUN: "true"
+      MERCADOPAGO_OAUTH_REDIRECT_URI: "https://demoda-dev.web.app/mercadopago/oauth/"
+    secrets:
+      - webhooks_handler_secrets
+secrets:
+  webhooks_handler_secrets:
+    file: .webhooks_handler_secrets
+volumes:
+  postgres_db_data:
