@@ -653,10 +653,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pdelabs/component-lib@^1.1.8":
-  version "1.1.8"
-  resolved "https://npm.pkg.github.com/download/@pdelabs/component-lib/1.1.8/54e34ee9abebe4c9982524afa881ac4875728c11"
-  integrity sha512-WveuMSxF4DVSCnsu0Dqqe8fw+lk3abNrJvHCrk6JSlPfvcfJ1Vp9ps33kA4a4IZLh4XA1J0zQ+PzmFjYM5rjHg==
+"@pdelabs/component-lib@^1.1.17":
+  version "1.1.17"
+  resolved "https://npm.pkg.github.com/download/@pdelabs/component-lib/1.1.17/41cbb86389bc2f92299e13df477af5e68342a2d5#41cbb86389bc2f92299e13df477af5e68342a2d5"
+  integrity sha512-17+4z2DOvcJ4CwxqTJDUQQl/OQm4dgBoaD19/dvAWcUilWgojJBxbwjSWwu6eR+rPqvzGBtfWulHdnCKz8f40w==
+  dependencies:
+    "@heroicons/react" "^2.0.13"
+    react-use "^17.4.0"
 
 "@sinclair/typebox@^0.24.1":
   version "0.24.51"

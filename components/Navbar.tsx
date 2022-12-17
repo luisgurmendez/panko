@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import useMobile from "../hooks/useMobile";
-import Searchbar from "./Searchbar";
 import pankoLogo from '../assets/logo.png';
 
 const Navbar = () => {

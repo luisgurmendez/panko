@@ -1,6 +1,6 @@
 import PageContainer from "../components/PageContainer"
 
-const Contact = () => {
+const About = () => {
 
     return (
         <PageContainer>
@@ -14,4 +14,4 @@ const Contact = () => {
 }
 
 
-export default Contact;
+export default About;

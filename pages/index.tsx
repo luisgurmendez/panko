@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import React from 'react';
-import Carousel from '../components/Carousel/Carousel';
+import { Carousel, Slider } from '@pdelabs/component-lib';
 import PageContainer from '../components/PageContainer';
 import Image, { ImageProps } from 'next/image';
 import sushiImg from '../assets/sushi.jpg'
@@ -20,12 +20,17 @@ const Home: NextPage = () => {
       </div>
       <SushiCarousel />
       <SushiCarousel />
+      <Slider>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => <div style={{ height: 250, width: '100%', backgroundColor: 'red' }} />)}
+      </Slider>
     </PageContainer>
 
   )
 }
 
 export default Home
+
+
 const SushiCarousel = () => {
 
   return (
