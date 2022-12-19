@@ -11,7 +11,8 @@ import sushiPlate from '../assets/sushistockphoto.jpeg'
 const Home: NextPage = () => {
   return (
     <PageContainer>
-      <SushiCarousel />
+      <img src={"https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"} alt={'vamo la argentina'} />
+      {/* <SushiCarousel />
       <div className='relative flex w-full flex-row'>
         <div className="flex-1 -translate-x-1/2">
           <Image alt="sushi" src={sushiPlate} />
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
       <SushiCarousel />
       <Slider>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => <div style={{ height: 250, width: '100%', backgroundColor: 'red' }} />)}
-      </Slider>
+      </Slider> */}
     </PageContainer>
 
   )
