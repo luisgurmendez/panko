@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className={`${showNavbarItems ? '' : 'hidden'} md:block`} id="navbar-default">
             <ul className="pt-4 flex items-center flex-col mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
                 <li>
-                    <a href="/menu" className={buildNavbarClassName('/menu')}>Menu</a>
+                    <a href={'menupanko.pdf'} className={buildNavbarClassName('/menu')} download>Menu</a>
                 </li>
                 <li>
                     <a href="/contact" className={buildNavbarClassName('/contact')}>Contacto</a>
