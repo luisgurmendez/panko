@@ -1,7 +1,7 @@
 import Router from 'next/router';
 import { useEffect, useState } from 'react';
 
-export const     = () => {
+export const usePageLoading = () => {
     const [isPageLoading, setIsPageLoading] = useState(false);
 
     useEffect(() => {
